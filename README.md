@@ -32,12 +32,12 @@
 
 #### 1. Clone the repository
 ```bash
-git clone https://github.com/XanderSteyn/HyperionDev.Databases/
+git clone https://github.com/XanderSteyn/HyperionDev.Bookstore/
 ```
 
 #### 2. Change to the project directory
 ```bash
-cd "HyperionDev.Databases"
+cd "HyperionDev.Bookstore"
 ```
 
 #### 3. Create a virtual environment
