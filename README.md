@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Tasks/Databases.svg" alt="Databases - CLI Bookstore Inventory Manager"/><br>
+  <img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Tasks/Databases.svg" width="100%" height="130px" alt="Databases - CLI Bookstore Inventory Manager"/><br>
 </h1>
 
 <img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Repos/Features.svg" alt="Features" height="25px"/>
