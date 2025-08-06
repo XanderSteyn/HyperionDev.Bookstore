@@ -55,7 +55,7 @@
 ### 6. Modular & Maintainable Code
 - Clean separation of concerns with reusable functions.
 - Each operation (examples: update, delete, search) is encapsulated for clarity.
-- Uses docstrings and inline comments to explain logic for maintainability.
+- Includes PEP8-compliant docstrings and inline comments for clarity and maintainability.
 
 <h1></h1>
 
