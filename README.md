@@ -1,87 +1,54 @@
+
 <h1 align="center">
-  <img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Tasks/Databases.svg" width="100%" height="130px" alt="Databases - CLI Bookstore Inventory Manager"/><br>
+  <img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Tasks/Databases.svg" width="100%" height="130px" alt="Databases - CLI Bookstore Inventory Manager"/>
 </h1>
 
+<img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Table%20of%20Contents.svg" alt="Table of Contents" height="25px"/>
+
+- [**Features**](#features)
+- [**Tech Stack**](#tech-stack)
+- [**Setup & Installation**](#setup)
+- [**Database Schema**](#database-schema)
+- [**Security**](#security)
+- [**Contributing**](#contributing)
+- [**License**](#license)
+
+<h1></h1>
+
+<a name="features"></a>
 <img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Repos/Features.svg" alt="Features" height="25px"/>
 
-- **Add Books:** Add new books to inventory with title, author, and quantity validation
-- **Update Books:** Modify existing book information including title, author, and quantity
-- **Delete Books:** Safely remove books from inventory with confirmation prompts
-- **Search Books:** Find books by ID or title with detailed search results
-- **View All Books:** Display all books in both detailed and table formats
-- **Author Management:** Manage author information with foreign key relationships
-- **Data Validation:** Comprehensive input validation for IDs, titles, quantities, and author references
-- **Error Handling:** Robust error handling for database operations and user input
-- **User Friendly:** Intuitive console-based interface with clear navigation
-- **Well Tested:** Includes comprehensive unit tests for all core functionality
-- **Database Integrity:** Foreign key constraints and data validation ensure data consistency
+| Feature                | Description                                                                  |
+|------------------------|------------------------------------------------------------------------------|
+| Add Books              | Register new books with title, author, and quantity                          |
+| Update Books           | Edit book details, including title, author, and stock                        |
+| Delete Books           | Remove books from inventory with confirmation                                |
+| Search Books           | Find books by ID or partial title match                                      |
+| View Inventory         | Display all books in table or detailed list format                           |
+| Author Management      | Add and update author details, with enforced foreign key relationships       |
+| Data Validation        | Comprehensive input validation and error handling                            |
+| Cross-Platform         | Works on Windows, macOS, and Linux                                           |
 
 <h1></h1>
 
-<img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/How%20It%20Works.svg" alt="How It Works" height="25px"/>
+<a name="tech-stack"></a>
+<img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Tech%20Stack.svg" alt="Tech Stack" height="25px"/>
 
-### 1. User Interaction & Navigation
-- Users interact through a **main menu** offering options to add, update, delete, search, or view all books.
-- Input is validated and protected against invalid entries or unexpected behaviors.
-- Clear prompts, confirmations, and error handling make the CLI intuitive and user-friendly.
-
-### 2. Book Inventory Management
-- The system stores book records with fields like **title**, **author**, **country**, and **quantity**.
-- Books are stored in a relational structure, with **author data stored separately** and linked using foreign keys.
-- Key functions include:
-  - `add_book()`: Add a new book and associate it with an author.
-  - `update_book()`: Modify the title, author, or quantity of an existing book.
-  - `delete_book()`: Safely remove a book after user confirmation.
-  - `view_all_books()`: Display books in either table or detailed list format.
-
-### 3. Book Search
-- Users can search books by **ID** or **title**.
-- Title search supports **partial matches** for flexibility.
-- Results are displayed in a **formatted table** using the `tabulate` library for clarity.
-
-### 4. Data Persistence & SQLite
-- The application uses a local `ebookstore.db` database for **permanent data storage**.
-- On first run, it creates necessary tables and populates initial records using:
-  - `create_tables()`
-  - `populate_tables()`
-- All interactions are managed with transactions and commit/rollback handling for reliability.
-
-### 5. Error Handling & UX
-- Handles errors gracefully with specific messages for:
-  - Database issues (`sqlite3.OperationalError`)
-  - General exceptions
-  - Invalid user input or interruptions
-
-### 6. Modular & Maintainable Code
-- Clean separation of concerns with reusable functions.
-- Each operation (examples: update, delete, search) is encapsulated for clarity.
-- Includes PEP8-compliant docstrings and inline comments for clarity and maintainability.
+- **Language:** Python 3.11+
+- **Database:** SQLite (via `sqlite3`)
+- **CLI UI:** Standard input/output, enhanced with [`tabulate`](https://pypi.org/project/tabulate/) for tables
 
 <h1></h1>
 
-<img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Repos/Technologies%20Used.svg" alt="Technologies Used" height="30px"/>
-
-- **Python** – Core programming language for application logic
-- **SQLite** – Lightweight, serverless database for data storage
-- **tabulate** – Library for creating formatted tables in console output
-- **unittest** – Python's built-in testing framework for automated testing
-- **sqlite3** – Python's built-in SQLite database interface
-
-<h2></h2>
-
-<img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Repos/Setup%20Instructions.svg" alt="Setup Instructions" height="30px"/>
+<a name="setup"></a>
+<img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Repos/Setup%20Instructions.svg" alt="Setup & Installation" height="30px"/>
 
 #### 1. Clone the repository
 ```bash
 git clone https://github.com/XanderSteyn/HyperionDev.Bookstore/
 ```
 
-#### 2. Change to the project directory
-```bash
-cd "HyperionDev.Bookstore"
-```
-
-#### 3. Create a virtual environment
+#### 2. Create a virtual environment
 - **Windows:**
   ```powershell
   python -m venv venv
@@ -91,7 +58,7 @@ cd "HyperionDev.Bookstore"
   python3 -m venv venv
   ```
 
-#### 4. Activate the virtual environment
+#### 3. Activate the virtual environment
 - **Windows (Command Prompt):**
   ```cmd
   .\venv\Scripts\activate.bat
@@ -105,29 +72,53 @@ cd "HyperionDev.Bookstore"
   source ./venv/bin/activate
   ```
 
-#### 5. Install dependencies
+#### 4. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-#### 6. Run the application
-```bash
+#### 5. Run the application
+```sh
 python shelf_track.py
 ```
 
 <h1></h1>
 
-<img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Repos/Running%20Tests.svg" alt="Running Tests" height="30px"/>
+<a name="database-schema"></a>
+<img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Repos/DatabaseSchema.svg" alt="Database Schema" height="25px"/>
 
-To run the comprehensive test suite and ensure everything works as expected:
-```bash
-python test_shelf_track.py
-```
+| Table   | Fields                                                                                                                                                         |
+|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| author  | `id (INTEGER, PRIMARY KEY)`<br> `name (TEXT, NOT NULL)`<br> `country (TEXT, NOT NULL)`                                                                               |
+| book    | `id (INTEGER, PRIMARY KEY)`<br> `title (TEXT, NOT NULL)`<br> `author_id (INTEGER, NOT NULL, FOREIGN KEY → author.id)`<br> `qty (INTEGER, NOT NULL, CHECK qty >= 0)` |
+
+**Initial Data:**  
+~ Populated with classic authors and books on first run.
 
 <h1></h1>
 
+<a name="security"></a>
+<img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Repos/Security.svg" alt="Security" height="30px"/>
+
+- **Input Validation:** All user input is validated for type, length, and constraints.
+- **SQL Injection Protection:** Uses parameterized queries throughout.
+- **Data Integrity:** Foreign key constraints and transaction rollbacks on error.
+- **Graceful Error Handling:** Handles database and user input errors robustly.
+
+<h1></h1>
+
+<a name="contributing"></a>
+<img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Repos/Contributing.svg" alt="Contributing" height="30px"/>
+
+1. Fork the repository and create a feature branch.
+2. Follow PEP8 and project code style (see `.flake8` config)
+3. Write tests for new features and bug fixes.
+4. Submit a pull request with a clear description.
+
+<h1></h1>
+
+<a name="license"></a>
 <img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/License.svg" alt="License" height="25px"/>
 
-This repository is protected by a custom license. See the [LICENSE](LICENSE) file for details.
-
-Unauthorized copying or submission of this work for academic purposes is prohibited. 
+This repository is protected by a custom license. See the [LICENSE](LICENSE) file for details.  
+Unauthorized copying or submission of this work for academic purposes is prohibited.
