@@ -17,16 +17,16 @@
 <a name="features"></a>
 <img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Repos/Features.svg" alt="Features" height="25px"/>
 
-| Feature                | Description                                                                  |
-|------------------------|------------------------------------------------------------------------------|
-| Add Books              | Register new books with title, author, and quantity                          |
-| Update Books           | Edit book details, including title, author, and stock                        |
-| Delete Books           | Remove books from inventory with confirmation                                |
-| Search Books           | Find books by ID or partial title match                                      |
-| View Inventory         | Display all books in table or detailed list format                           |
-| Author Management      | Add and update author details, with enforced foreign key relationships       |
-| Data Validation        | Comprehensive input validation and error handling                            |
-| Cross-Platform         | Works on Windows, macOS, and Linux                                           |
+| Feature                | Description                                                             |
+|------------------------|-------------------------------------------------------------------------|
+| Add Books              | Register new books with title, author, and quantity                     |
+| Update Books           | Edit book details, including title, author, and stock                   |
+| Delete Books           | Remove books from inventory with confirmation                           |
+| Search Books           | Find books by ID or partial title match                                 |
+| View Inventory         | Display all books in table or detailed list format                      |
+| Author Management      | Add and update author details, with enforced foreign key relationships  |
+| Data Validation        | Comprehensive input validation and error handling                       |
+| Cross-Platform         | Works on Windows, macOS, and Linux                                      |
 
 <h1></h1>
 
@@ -34,13 +34,13 @@
 <img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Tech%20Stack.svg" alt="Tech Stack" height="25px"/>
 
 - **Language:** Python 3.11+
-- **Database:** SQLite (via `sqlite3`)
-- **CLI UI:** Standard input/output, enhanced with [`tabulate`](https://pypi.org/project/tabulate/) for tables
+- **Database:** - SQLite (dev) / MariaDB or MySQL (prod)
+- **CLI UI:** Standard input/output, enhanced with [`tabulate`](https://pypi.org/project/tabulate/)
 
 <h1></h1>
 
 <a name="setup"></a>
-<img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Repos/Setup%20Instructions.svg" alt="Setup & Installation" height="30px"/>
+<img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Repos/Setup%20Instructions.svg" alt="Setup & Instructions" height="30px"/>
 
 #### 1. Clone the repository
 ```bash
