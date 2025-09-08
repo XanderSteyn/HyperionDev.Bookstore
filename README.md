@@ -1,4 +1,3 @@
-<img width="414" height="474" alt="image" src="https://github.com/user-attachments/assets/ee2cc730-f889-4d0d-9ea5-28858c786e46" />
 <h1 align="center">
   <img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Tasks/Databases.svg" width="100%" height="130px" alt="Databases - CLI Bookstore Inventory Manager"/>
 </h1>
