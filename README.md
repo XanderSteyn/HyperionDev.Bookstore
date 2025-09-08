@@ -1,4 +1,4 @@
-
+<img width="414" height="474" alt="image" src="https://github.com/user-attachments/assets/ee2cc730-f889-4d0d-9ea5-28858c786e46" />
 <h1 align="center">
   <img src="https://github.com/XanderSteyn/xandersteyn/blob/main/IGNORE/Headers/Tasks/Databases.svg" width="100%" height="130px" alt="Databases - CLI Bookstore Inventory Manager"/>
 </h1>
@@ -48,7 +48,12 @@
 git clone https://github.com/XanderSteyn/HyperionDev.Bookstore/
 ```
 
-#### 2. Create a virtual environment
+#### 2. Change to the project directory
+```bash
+cd "HyperionDev.Bookstore"
+```
+
+#### 3. Create a virtual environment
 - **Windows:**
   ```powershell
   python -m venv venv
@@ -58,7 +63,7 @@ git clone https://github.com/XanderSteyn/HyperionDev.Bookstore/
   python3 -m venv venv
   ```
 
-#### 3. Activate the virtual environment
+#### 4. Activate the virtual environment
 - **Windows (Command Prompt):**
   ```cmd
   .\venv\Scripts\activate.bat
@@ -72,12 +77,12 @@ git clone https://github.com/XanderSteyn/HyperionDev.Bookstore/
   source ./venv/bin/activate
   ```
 
-#### 4. Install dependencies
+#### 5. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-#### 5. Run the application
+#### 6. Run the application
 ```sh
 python shelf_track.py
 ```
